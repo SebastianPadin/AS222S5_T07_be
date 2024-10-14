@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'temurin'  # O puedes usar 'zulu', 'adopt', etc. según prefieras
+          distribution: 'zulu'  # O puedes usar 'zulu', 'adopt', etc. según prefieras
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
