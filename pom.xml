@@ -15,12 +15,12 @@
 	<description>Microservicio de servicio cognitivo transllate text de azure</description>
 
 	<properties>
-		<java.version>17</java.version>
-		<sonar.projectKey>your_sonarcloud_project_key</sonar.projectKey>
-    		<sonar.organization>your_sonarcloud_organization</sonar.organization>
-    		<sonar.host.url=https://sonarcloud.io</sonar.host.url>
-    		<sonar.login>${env.SONAR_TOKEN}</sonar.login>
-	</properties>
+        <java.version>17</java.version>
+        <sonar.projectKey>your_sonarcloud_project_key</sonar.projectKey>
+        <sonar.organization>your_sonarcloud_organization</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>${env.SONAR_TOKEN}</sonar.login>
+    	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
