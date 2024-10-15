@@ -18,6 +18,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
+          distribution: 'zulu'  
 
       - name: Cache Maven packages
         uses: actions/cache@v3
@@ -43,7 +44,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'zulu'
+          distribution: 'zulu'  
 
       - name: Build project
         run: mvn clean package -DskipTests
