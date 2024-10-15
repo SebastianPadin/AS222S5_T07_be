@@ -29,7 +29,7 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Run Maven SonarCloud analysis
-        run: mvn clean verify sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: mvn clean verify sonar:sonar -Dsonar.projectKey=SebastianPadin_AS222S5_T07_be -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
   docker:
     name: Build and Push Docker Image
